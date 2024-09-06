@@ -6,7 +6,7 @@ const gm = require('gm').subClass({ imageMagick: '7+' });
 const path = require('path');
 require("dotenv").config();
 
-BUCKET_NAME = 'projectrobsonresizeimage';
+BUCKET_NAME = 'shomeimagebucket';
 
 // Configure AWS
 AWS.config.update({
@@ -18,7 +18,7 @@ AWS.config.update({
 
 const s3 = new AWS.S3();
 const sqs = new AWS.SQS();
-const queueUrl = 'https://sqs.ap-southeast-2.amazonaws.com/901444280953/robson-test-queue';
+const queueUrl = 'https://sqs.ap-southeast-2.amazonaws.com/337909779947/shome-queue';
 
 // Define your image processing functions here...
 async function resizeImage(firstImageURL, userSearch, imageSize) {
