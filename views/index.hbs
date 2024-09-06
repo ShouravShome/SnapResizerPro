@@ -1,0 +1,71 @@
+{{!-- index.hbs --}}
+<p class='counterIndex' style="color: rgb(0, 0, 0)"></p>
+{{#> layout title="Home Page"}}
+
+
+
+<div class="intro row">
+    <div class="col-md-6">
+        <div class="inner-border">
+            <h1>
+                <strong>Search</strong> the images<br>
+                you want from Flickr.
+            </h1>
+        </div>
+    </div>
+    <div class="col-md-6 text-center">
+        <p></p>
+        <h1>
+            <strong>And instantly resize them!</strong>
+        </h1>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <p class="text-center"><strong>Search for your images. Choose how many you want and which size do you want
+                    it
+                    available for you.</strong></p>
+            <div class="input-group mb-3">
+                <input type="text" id="userSearch" class="form-control" placeholder="Search" aria-label="Search"
+                    aria-describedby="basic-addon2">
+
+
+                <input type="number" id="numImages" name="numImages" class="form-control" min="1" max="100"
+                    placeholder="N. of images">
+
+
+                <select name="imageSize" id="imageSize" class="form-control">
+                    <option value="">Image Size</option>
+                    <option value="320x240">Small (320x240)</option>
+                    <option value="640x480">Medium (640x480)</option>
+                    <option value="800x600">Large (800x600)</option>
+                    <option value="1024x768">X-Large (1024x768)</option>
+
+                </select>
+                <div class="input-group-append">
+                    <button id='fetchButton' class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="loadingIndicator" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%);">
+    <div>
+        <img src="/images/loading.gif" alt="Loading..." />
+        <p>Processing images, please wait...</p>
+    </div>
+</div>
+
+
+
+{{#each formattedPhotoData}}
+<a href={{this.url}}>
+    <img src={{this.image}} alt={{this.title}}>
+</a>
+{{/each}}
+
+<script src="/javascripts/index.js"></script>
+{{/layout}}

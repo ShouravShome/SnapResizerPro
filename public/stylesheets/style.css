@@ -1,0 +1,183 @@
+a {
+  color: #00B7FF;
+}
+
+body {
+  background-color: #fefefe;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#loadingIndicator {
+  position: fixed;
+  /* or absolute */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  /* High z-index to make it on top of other elements */
+  background-color: rgba(255, 255, 255, 0.8);
+  /* semi-transparent white background */
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 10px;
+  color: #000;
+}
+
+.navbar {
+  padding: 0px 20;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.intro {
+  margin: 0 40px;
+}
+
+.inner-border {
+  border-right: 1px solid #000;
+  padding-right: 15px;
+}
+
+.alert {
+  margin-top: 45px;
+}
+
+#returnpage {
+  margin-top: 45px;
+  z-index: 1001;
+}
+
+.counterIndex {
+  text-align: center;
+  margin-top: 55px;
+  z-index: 1001;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.jumbotron {
+  background-image: url('../images/trail.jpg');
+  max-width: 95%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  padding-top: 15em;
+  padding-bottom: 12em;
+  padding-right: 10em;
+  margin: 0 auto;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+
+.trail-card {
+  width: 400px;
+  height: 250px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.trail-card .card-body {
+  background-image: url('../images/trail.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: rgb(0, 0, 0);
+}
+
+.card-header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.card-body {
+  text-align: center;
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.btn-spacing {
+  margin-left: 10px;
+}
+
+.central-container {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.list-container {
+  display: inline-block;
+  width: 45%;
+  vertical-align: top;
+  margin: 0 40px;
+}
+
+.left-list,
+.right-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.left-list li,
+.right-list li {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+.results-card {
+  width: 800px;
+  height: 450px;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.card-img-results {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+}
+
+.left-list .results-card {
+  background-color: #f0f0f0;
+}
+
+.right-list .results-card {
+  background-color: #e0e0e0;
+}
+
+.results-card h3 {
+  margin: 0;
+}
+
+.results-card p {
+  margin: 5px 0;
+}

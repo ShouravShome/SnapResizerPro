@@ -1,0 +1,54 @@
+<body>
+    <style>
+        /* Define a container to center its children */
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Vertically center the content */
+            align-items: center;
+            /* Horizontally center the content */
+            height: 100vh;
+            /* Set the container height to the viewport height */
+        }
+
+        /* Additional styles for the content */
+        .text-center {
+            text-align: center;
+        }
+    </style>
+
+    <div class="container">
+        <h1>Oops! The page was not found!<br></h1>
+        <h4><strong><br> But you can go ahead and search your images from here!<br><br></strong></h4>
+        <div class="col-md-6">
+            <h4 class="text-center">Choose how many you want and which size do you want
+                it
+                available for you.</h4>
+            <div class="input-group mb-3">
+                <input type="text" id="userSearch" class="form-control" placeholder="Search" aria-label="Search"
+                    aria-describedby="basic-addon2">
+
+
+                <input type="number" id="numImages" name="numImages" class="form-control" min="1" max="100"
+                    placeholder="N. of images">
+
+
+                <select name="imageSize" id="imageSize" class="form-control">
+                    <option value="">Image Size</option>
+                    <option value="320x240">Small (320x240)</option>
+                    <option value="640x480">Medium (640x480)</option>
+                    <option value="800x600">Large (800x600)</option>
+                    <option value="1024x768">X-Large (1024x768)</option>
+
+                </select>
+                <div class="input-group-append">
+                    <button id='fetchButton' class="btn btn-secondary">Search</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="/javascripts/index.js"></script>
+</body>
